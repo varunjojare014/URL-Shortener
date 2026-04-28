@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "1i6tH8pHRz9OwiF4ZIkuax4tqpDnO1fmzw/WpqHgM5o=",
+  "Source": "UrlShortener",
+  "BasePath": "_content/UrlShortener",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UrlShortener\\wwwroot",
+      "Source": "UrlShortener",
+      "ContentRoot": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\",
+      "BasePath": "_content/UrlShortener",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\9u5newgawz-4fr97jgkq5.gz",
+      "SourceId": "UrlShortener",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UrlShortener",
+      "RelativePath": "index#[.{fingerprint=4fr97jgkq5}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "u2mx2skwtk",
+      "Integrity": "BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\index.html",
+      "SourceId": "UrlShortener",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\",
+      "BasePath": "_content/UrlShortener",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4fr97jgkq5",
+      "Integrity": "8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.4fr97jgkq5.html",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\9u5newgawz-4fr97jgkq5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000665778961"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1501"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4fr97jgkq5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc="
+        }
+      ]
+    },
+    {
+      "Route": "index.4fr97jgkq5.html",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4fr97jgkq5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc="
+        }
+      ]
+    },
+    {
+      "Route": "index.4fr97jgkq5.html.gz",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\9u5newgawz-4fr97jgkq5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4fr97jgkq5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\9u5newgawz-4fr97jgkq5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000665778961"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1501"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8HkPQuRDqHXubapsWV/ZZzM16U9ys0jZcqN2G9OW8Vc="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "E:\\Projects\\URL Shortner\\UrlShortener\\obj\\Debug\\net9.0\\compressed\\9u5newgawz-4fr97jgkq5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Apr 2026 05:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BmBXn+tcv4oNYMhe2JpEyPks7yDjhPWROXlOjl0UJbk="
+        }
+      ]
+    }
+  ]
+}

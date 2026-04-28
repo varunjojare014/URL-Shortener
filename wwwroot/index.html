@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>URL Shortener</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: white;
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 420px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      p {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-bottom: 12px;
+        outline: none;
+        transition: 0.2s;
+      }
+
+      input:focus {
+        border-color: #4facfe;
+        box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #4facfe, #00c6ff);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      #result {
+        margin-top: 20px;
+      }
+
+      .link-box {
+        background: #f5f7ff;
+        padding: 12px;
+        border-radius: 10px;
+        word-break: break-all;
+        border: 1px solid #e0e6ff;
+      }
+
+      a {
+        color: #4facfe;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .copy-btn {
+        margin-top: 10px;
+        background: #28a745;
+      }
+
+      .copy-btn:hover {
+        background: #218838;
+      }
+
+      .error {
+        color: red;
+        margin-top: 10px;
+      }
+
+      .loader {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>🔗 URL Shortener</h1>
+      <p>Paste your long URL and get a short one instantly</p>
+
+      <input id="urlInput" placeholder="Enter your long URL..." />
+
+      <input id="customCode" placeholder="Add custom URL name (optional)" />
+
+      <button onclick="shortenUrl()">Shorten URL</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      async function shortenUrl() {
+        const url = document.getElementById("urlInput").value;
+        const customCode = document.getElementById("customCode").value;
+        const resultDiv = document.getElementById("result");
+
+        if (!url) {
+          resultDiv.innerHTML = `<div class="error">Please enter a URL</div>`;
+          return;
+        }
+
+        resultDiv.innerHTML = `<div class="loader">Processing...</div>`;
+
+        try {
+          const response = await fetch("/shorten", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              originalUrl: url,
+              customCode: customCode || null,
+            }),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            resultDiv.innerHTML = `<div class="error">${data.message}</div>`;
+            return;
+          }
+
+          resultDiv.innerHTML = `
+        <div class="link-box">
+          <a href="${data.shortUrl}" target="_blank">${data.shortUrl}</a>
+        </div>
+
+        <img src="${data.qrCode}" style="margin-top:15px; width:150px;" />
+
+        <button class="copy-btn" onclick="copyLink('${data.shortUrl}')">
+          Copy Link
+        </button>
+
+        <a href="${data.qrCode}" download="qr.png">
+          <button class="copy-btn" style="background:#007bff; margin-top:10px;">
+            Download QR
+          </button>
+        </a>
+      `;
+        } catch (err) {
+          resultDiv.innerHTML = `<div class="error">Something went wrong</div>`;
+        }
+      }
+
+      function copyLink(link) {
+        navigator.clipboard.writeText(link);
+        alert("Copied to clipboard!");
+      }
+    </script>
+  </body>
+</html>
